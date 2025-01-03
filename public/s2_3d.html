@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/GLTFLoader.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1c1202;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        #viewer {
+            width: 65vw;
+            height: 85vh;
+            border: 2px solid #f5c47a;
+        }
+        .controls {
+            display: flex;
+            gap: 20px;
+        }
+        .controls button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #f5c47a;
+            border-radius: 5px;
+            color: #1c1202;
+        }
+        .controls button:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="viewer"></div>
+        <div class="controls">
+            <button id="rotateBtn">Rotate Model</button>
+            <button id="zoomBtn">Zoom In/Out</button>
+        </div>
+    </div>
+
+    <script>
+        // Scene setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth * 0.7, window.innerHeight * 0.9);
+        document.getElementById('viewer').appendChild(renderer.domElement);
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+        scene.add(ambientLight);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 2.2);
+        directionalLight.position.set(0.5, 0.5, 0.5);
+        scene.add(directionalLight);
+
+        // Load a single model
+        const modelPath = 'finaldress2.glb';  // You can change this path if needed
+        let model;
+        const loader = new THREE.GLTFLoader();
+
+        function loadModel() {
+            loader.load(modelPath, (gltf) => {
+                model = gltf.scene;
+                model.scale.set(1, 1, 1); // Adjust the model scale if necessary
+                model.position.set(0, -75, 0); // Center the model
+                scene.add(model);
+            }, undefined, (error) => {
+                console.error('Error loading model:', error);
+            });
+        }
+
+        loadModel(); // Load the model when the page loads
+
+        // Camera position
+        camera.position.set(0, 1, 140);
+
+        // Rotation and zoom control variables
+        let rotationSpeed = 0.01;
+        let zoomLevel = 140;
+        let isRotating = false;  // Track whether the model is rotating
+
+        // Handle rotation toggle
+        document.getElementById('rotateBtn').addEventListener('click', () => {
+            isRotating = !isRotating;  // Toggle the rotation state
+        });
+
+        // Handle zoom level toggle
+        document.getElementById('zoomBtn').addEventListener('click', () => {
+            zoomLevel = (zoomLevel === 140) ? 100 : 140; // Toggle between zoom levels
+            camera.position.set(0, 1, zoomLevel);
+        });
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            if (model && isRotating) {
+                model.rotation.y += rotationSpeed; // Rotate the model continuously when isRotating is true
+            }
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Handle window resizing
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth * 0.7, window.innerHeight * 0.9);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+</html>
