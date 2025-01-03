@@ -1,2 +1,3 @@
 # webtech_e_commerce
-An e-commerce website built entirely by us.
+An innovative e-commerce platform, built entirely by our team using the MERN stack, featuring an advanced virtual try-on capability. 
+ 
