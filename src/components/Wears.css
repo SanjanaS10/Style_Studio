@@ -1,0 +1,141 @@
+.productc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px;
+    padding: 50px 20px;
+    background-color: #f2eae2;
+    flex: 1;
+}
+.productc-grid h3 {
+    text-decoration:none;
+}
+/* Center single product */
+.centeredc-single-product {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr !important; /* Prevents full-width stretching */
+}
+
+.productc {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px; /* Prevents expanding beyond intended size */
+}
+.productc a {
+text-decoration: none; /* Removes underline */
+color: inherit; /* Inherits the color of the parent element */
+}
+.productc{
+    font-family: none;
+}
+
+.productc a h3 {
+font-weight: normal; /* Optional: adjust font weight if needed */
+}
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f2eae2;
+    color: #3c2a1e;
+    scroll-behavior: smooth;
+}
+
+.mainc-content {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar styles */
+.sidebarc {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebarc h2 {
+    font-size: 20px;
+    color: #3c2a1e;
+    margin-bottom: 15px;
+}
+
+.filterc-section {
+    margin-bottom: 20px;
+}
+
+.filterc-section label {
+    font-size: 16px;
+    color: #452c1c;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filterc-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.pricec-range {
+    display: flex;
+    gap: 10px;
+}
+
+.pricec-range input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ 
+
+.productc:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.productc img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.productc img:hover {
+    transform: scale(1.05);
+}
+
+.productc h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.productc p {
+    font-size: 16px;
+    color: #3c2a1e;
+}
+
+footer {
+    padding: 20px;
+    background-color: #3c2a1e;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #b89c80;
+}

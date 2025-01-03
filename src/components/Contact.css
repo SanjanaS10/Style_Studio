@@ -1,0 +1,52 @@
+.cn {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f2eae2;
+    color: #3c2a1e;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.containert {
+    max-width: 900px;
+    margin: 85px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containert h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3c2a1e;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family:none;
+    font-size:17px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: #3c2a1e;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #b89c80;
+}

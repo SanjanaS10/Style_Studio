@@ -1,0 +1,174 @@
+.abt {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f2eae2;
+    color: #3c2a1e;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.about-section {
+    padding: 50px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #f0e4d7 20%, #e8d2bc);
+    color: #3c2a1e;
+    animation: fadeIn 1.2s ease-in;
+}
+
+.about-section h2 {
+
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInText 1.5s ease forwards 0.5s;
+}
+
+.values-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.values-section h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.value-item {
+    width: 250px;
+    padding: 20px;
+    background: #f2eae2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideInUp 1.2s ease forwards;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.value-item h4 {
+    font-size: 1.5rem;
+    color: #b89c80;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #3c2a1e;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #b89c80;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+}
+.containerq h3{
+text-decoration : none;
+}

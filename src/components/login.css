@@ -1,0 +1,103 @@
+
+
+/* Container Styling */
+.parentl-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Or any height you need */
+}
+
+.forml-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.forml-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3c2a1e;
+}
+
+/* Form Styling */
+.forml-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.forml-group label {
+    font-size: 1rem;
+    color: #3c2a1e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forml-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+.forml-group input:focus {
+    border-color: #b89c80;
+    outline: none;
+}
+
+/* Button Styling */
+.forml-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #3c2a1e;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forml-button:hover {
+    background-color: #b89c80;
+}
+
+/* Link Styling */
+.switchl-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #3c2a1e;
+}
+
+.switchl-link a {
+    color: #b89c80;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.switchl-link a:hover {
+    color: #3c2a1e;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

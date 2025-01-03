@@ -1,0 +1,258 @@
+/* src/components/ShopPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=WindSong&display=swap');
+
+/* Rest of your styles */
+
+.sp {
+    margin: 0;
+    font-family: 'https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=WindSong&display=swap';
+    background-color: #f2eae2;
+    color: #3c2a1e;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+.womens {
+    text-align: center;
+    padding: 100px 40px;
+    background: linear-gradient(135deg, #f0e4d7 20%, #e8d2bc);
+    position: relative;
+    overflow: hidden;
+    color: #3c2a1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: slideBackground1 9s infinite; /* 12 seconds loop */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    
+}
+
+.womens:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideBackground1 {
+    0% {
+        background-image: url('img1.png');
+        background-position: left center;
+        background-size: center;
+    }
+    50% {
+        background-image: url('img2.png');
+        background-position: center center;
+        background-size: center;
+    }
+    100% {
+        background-image: url('img1.png');
+        background-position: right center;
+        background-size: center;
+    }
+}
+
+.womens h2 {
+    margin-bottom: 1rem;
+}
+
+.mens {
+    text-align: center;
+    padding: 100px 40px;
+    background: rgb(79, 19, 19);
+    position: relative;
+    overflow: hidden;
+    color:cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: slideBackground2 9s infinite; /* 12 seconds loop */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.mens:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideBackground2 {
+    0% {
+        background-image: url('img_b.png');
+        background-position: right center;
+        background-size: center;
+    }
+    50% {
+        background-image: url('1.png');
+        background-position: center center;
+        background-size: center;
+    }
+    100% {
+        background-image: url('img_b.png');
+        background-position: left center;
+        background-size: center;
+    }
+}
+
+.mens h2 {
+    margin-bottom: 1rem;
+}
+
+.accessoriess {
+    text-align: center;
+    padding: 100px 40px;
+    background: linear-gradient(135deg, #f0e4d7 20%, #e8d2bc);
+    position: relative;
+    overflow: hidden;
+    color: #3c2a1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: slideBackground 9s infinite; /* 12 seconds loop */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.accessoriess:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url('img_a.png');
+        background-position: left center;
+        background-size: center;
+    }
+    50% {
+        background-image: url('img1_a.png');
+        background-position: center center;
+        background-size: center;
+    }
+    100% {
+        background-image: url('img_a.png');
+        background-position: right center;
+        background-size: center;
+    }
+}
+
+.accessoriess h2 {
+    margin-bottom: 1rem;
+}
+
+.denims {
+    text-align: center;
+    padding: 100px 40px;
+    background: rgb(79, 19, 19);
+    position: relative;
+    overflow: hidden;
+    color:cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground3 9s infinite;
+    transition: transform 0.5s ease;
+}
+
+@keyframes slideBackground3 {
+    0% {
+        background-image: url('imgd.png');
+        background-position: right center;
+        background-size: center;
+    }
+    50% {
+        background-image: url('2.png');
+        background-position: center center;
+        background-size: center;
+    }
+    100% {
+        background-image: url('imgd.png');
+        background-position: left center;
+        background-size: center;
+    }
+}
+
+.denims h2 {
+    margin-bottom: 1rem;
+}
+
+
+.denims:hover {
+    transform: scale(1.05);
+}
+
+.denims h2 {
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    padding: 20px;
+    background-color: #3c2a1e;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #b89c80;
+}
+ 
+#w{
+    font-family: "WindSong", serif;
+    font: weight 400;
+    font-style: normal; 
+    color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+transition: color 0.3s ease;}
+
+#w:hover{color: rgba(255, 255, 255, 1);}
+
+#a{ font-family: "WindSong", serif;
+    font: weight 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+transition: color 0.3s ease;
+
+}
+#a:hover{color: rgba(255, 255, 255, 1);}
+#d{ font-family: "WindSong", serif;
+    font: weight 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+transition: color 0.3s ease;
+
+}
+#d:hover{color: rgba(255, 255, 255, 1);}
+#m{ font-family: "WindSong", serif;
+    font: weight 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+transition: color 0.3s ease;
+
+}
+#m:hover{color: rgba(255, 255, 255, 1);}

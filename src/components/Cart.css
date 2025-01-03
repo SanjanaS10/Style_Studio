@@ -1,0 +1,111 @@
+.cartx-container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: rgb(231, 227, 227);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .cartx-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #d5ba9a;
+  }
+  
+  .cartx-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .cartx-details {
+    flex: 1;
+  }
+  
+  .cartx-details h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #3c2a1e;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .cartx-details p {
+    margin: 5px 0;
+    color: #7a5e48;
+  }
+  
+  .cartx-price {
+    font-size: 18px;
+    color: #3c2a1e;
+    margin-right: 20px;
+  }
+  
+  .quantityx-control {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .quantityx-control button {
+    background-color: #ac8966;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .removex-btn {
+    background-color: #ac8966;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .removex-btn:hover {
+    background-color: #7a5e48;
+  }
+  
+  .cartx-summary {
+    padding: 20px;
+    font-size: 18px;
+    text-align: right;
+    color: #3c2a1e;
+  }
+  
+   .checkoutx-btn {
+    background-color: #ac8966;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .continuex-shopping-btn{
+    background-color: #ac8966;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .checkoutx-btn:hover {
+    background-color: #3c2a1e;
+  }
+  .continuex-shopping-btn:hover {
+    background-color: #3c2a1e;
+  }
+  

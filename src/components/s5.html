@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Wear</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f2eae2;
+            color: #3c2a1e;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            color: #3c2a1e;
+        }
+
+        header:hover h1 {
+            color: #b89c80;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3c2a1e;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #b89c80;
+        }
+
+        .product-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product-image img:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .try-on-btn a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Ensure text color matches button color */
+        }
+        .product-details {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .product-title {
+            font-size: 28px;
+            color: #3c2a1e;
+            font-weight: bold;
+        }
+
+        .product-price {
+            font-size: 24px;
+            color: #b89c80;
+            font-weight: bold;
+        }
+
+        .product-rating {
+            color: #ffcc00;
+        }
+
+        .product-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #3c2a1e;
+        }
+
+        .product-features {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #452c1c;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .product-options {
+            display: flex;
+            gap: 15px;
+        }
+
+        .product-option label {
+            font-size: 16px;
+            color: #452c1c;
+            font-weight: bold;
+        }
+
+        .quantity-input {
+            width: 50px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .add-to-cart-btn {
+            padding: 12px 24px;
+            background-color: #3c2a1e;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #b89c80;
+        }
+
+        .try-on-btn {
+            padding: 12px 24px;
+            background-color: #e0b684;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+
+        .try-on-btn:hover {
+            background-color: #f5d6a9;
+        }
+
+        .delivery-info {
+            background-color: #f2eae2;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #3c2a1e;
+            margin-top: 10px;
+        }
+
+        .customer-reviews {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        .review {
+            background-color: #f9f5f0;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #3c2a1e;
+        }
+
+        .review p {
+            margin: 5px 0 0;
+            color: #6d4b3d;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #3c2a1e;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #b89c80;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STYLE STUDIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><img src="cart-removebg-preview (1).png" alt="Cart Icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="s5.jpeg" alt="Elegant Women's Dress">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title"> Casual White Button-Down with Jeans</h2>
+                <p class="product-price">₹819.00</p>
+                <p class="product-rating">⭐⭐⭐⭐☆ (129 reviews)</p>
+                 
+                <ul class="product-features">
+                    <li>Machine washable</li>
+                    <li>Fit type: Regular</li>
+                </ul>
+                
+                <div class="product-options">
+                    <div class="product-option">
+                        <label for="size">Size:</label>
+                        <select id="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                   
+                </div>
+                
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+                </div>
+                
+                <button class="add-to-cart-btn">Add to Cart</button>
+                
+                <!-- 3D Try-On Button -->
+                <button class="try-on-btn"><a href="s2_3d.html" target="_blank">Try 3D Model</a></button>
+
+                <div class="delivery-info">
+                    <p>Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 STYLE STUDIO. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

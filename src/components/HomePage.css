@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        /* New Product Badge */
+/* New Product Badge */
+/* New Product Badge */
+ /* New Product Badge */
+.newh-product {
+    position: relative;
+}
+
+.newh-product::before {
+    content: ''; /* No text content, just the image */
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 80px; /* Adjust size of the circle */
+    height: 80px; /* Adjust size of the circle */
+    background-image: url('new.jpg'); /* Image inside the circle */
+    background-size: cover; /* Ensure the image covers the entire circle */
+    background-position: center; /* Center the image inside the circle */
+    border-radius: 50%; /* Create the circle */
+    display: inline-block;
+    text-align: center;
+    z-index: 2; /* Make sure the badge stays on top */
+    animation: heartbeat 1.5s ease-in-out infinite; /* Add heartbeat animation */
+}
+
+/* Heartbeat animation for the "New" badge */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    25% {
+        transform: scale(1.1); /* Slightly bigger */
+    }
+    50% {
+        transform: scale(1); /* Back to normal */
+    }
+    75% {
+        transform: scale(1.1); /* Slightly bigger again */
+    }
+    100% {
+        transform: scale(1); /* Back to normal */
+    }
+}
+
+/* Product image and hover effect */
+.producth img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    z-index: 1; /* Ensure image stays behind the badge */
+}
+
+.producth img:hover {
+    transform: scale(1.05);
+    z-index: 1; /* Keep image's z-index the same */
+}
+
+/* Hover effect for .new-product to ensure it behaves the same as other products */
+.newh-product img:hover {
+    transform: scale(1.05);
+    z-index: 1; /* Prevent the image from overlapping the badge */
+}
+
+  
+
+
+        .homeh{
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f2eae2;
+            color: #3c2a1e;
+            scroll-behavior: smooth;
+        }
+
+
+        .heroh {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #f0e4d7 20%, #e8d2bc);
+            position: relative;
+            overflow: hidden;
+            color: #ffffff;
+            background-image: url('main5.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+        }
+
+        .heroh h1 {
+            font-size: 55px;
+            margin: 90px 0;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+    }
+
+    .fade-in-text:nth-child(1) { animation-delay: 0s; }
+    .fade-in-text:nth-child(2) { animation-delay: 0.25s; }
+    .fade-in-text:nth-child(3) { animation-delay: 0.5s; }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+        /* .hero img {
+            max-width: 80%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+        } */
+
+        .heroh button {
+            background-color: #b89c80;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .heroh button:hover {
+            background-color: #3c2a1e;
+            transform: scale(1.05);
+        }
+
+        .welcomeh-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #d5ba9a;
+            transition: all 0.3s ease;
+        }
+
+        .welcomeh-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .welcomeh-section p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .producth-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+            background-color: #f2eae2;
+        }
+
+        .producth {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producth:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .producth img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .producth img:hover {
+            transform: scale(1.05);
+        }
+
+        .producth h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .producth p {
+            font-size: 16px;
+            color: #3c2a1e;
+        }
+
+        .saleh-banner {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #d5ba9a;
+        }
+
+        .saleh-banner h2 {
+            font-size: 40px;
+            margin-bottom: 25px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .saleh-banner button {
+            background-color: #b89c80;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .saleh-banner button:hover {
+            background-color: #3c2a1e;
+            transform: scale(1.05);
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #3c2a1e;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #b89c80;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
