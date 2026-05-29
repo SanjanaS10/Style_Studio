@@ -47,7 +47,9 @@ const HomePage = () => {
 
       <section className="saleh-banner">
         <h2>So many deals!</h2>
-        <button>Shop Now</button>
+         <Link to="/shop">
+          <button>Shop Now</button>
+        </Link>
       </section>
 
       <footer>
