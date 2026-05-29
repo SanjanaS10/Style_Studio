@@ -4,7 +4,10 @@
   "description": "webtech_mini_project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "server": "node server.js",
+    "dev": "node server.js"
   },
   "author": "ssb",
   "license": "ISC",
@@ -14,9 +17,29 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1",
-    "react-router-dom": "^6.28.0"
+    "razorpay": "^2.9.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-redux": "^9.3.0",
+    "react-router-dom": "^6.30.3",
+    "react-scripts": "^5.0.1",
+    "redux": "^5.0.1",
+    "web-vitals": "^5.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

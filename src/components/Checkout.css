@@ -12,7 +12,21 @@
     border-radius: 10px;
     background-color: #f9f9f9;
   }
-  
+  .checkout-error-banner {
+  background: #ffe5e5;
+  color: #c0392b;
+  border: 1px solid #f5c6c6;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.field-error {
+  color: #c0392b;
+  font-size: 12px;
+  margin: -8px 0 8px 2px;
+}
   .checkout-form input, .checkout-form select {
     display: block;
     width: 95%;

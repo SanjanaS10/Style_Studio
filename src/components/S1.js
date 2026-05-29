@@ -17,6 +17,7 @@ const S1 = () => {
     }
 
     const product = {
+      id: 's1',   
       name: "Galaxy-Inspired Swim Dress",
       price: '₹ 519',
       image: "s2.jpg",

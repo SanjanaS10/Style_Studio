@@ -1,7 +1,12 @@
 import React from 'react';
-import './Denim.css'; // External stylesheet for styles
+import './Denim.css';
 import Navbar from './Navbar';
-const Denim = () => (
+import { useNavigate } from 'react-router-dom';
+
+const Denim = () => {
+  const navigate = useNavigate();
+
+  return (
   <div>
     <Navbar />
     <div className='dnm'>
@@ -17,7 +22,7 @@ const Denim = () => (
       <div className="sectiond-text">
         <h2>Normcore with Denim</h2>
         <p>Blending "normal" and "hardcore", normcore denim offers a laid-back, effortless vibe. Whether paired with an oversized jacket or street-style layers, it's a go-to trend for a chic yet casual look.</p>
-        <button className="btnd">Discover More</button>
+        <button className="btnd" onClick={() => navigate('/denim-shop')}>Discover More</button>
       </div>
     </div>
 
@@ -25,7 +30,7 @@ const Denim = () => (
       <div className="sectiond-text">
         <h2>Indigo Denim</h2>
         <p>Deep and rich, indigo denim brings out a retro 70s flair. Styled with modern cuts or minimalist layers, this denim is perfect for a fresh take on a timeless classic.</p>
-        <button className="btnd">Explore Indigo</button>
+        <button className="btnd" onClick={() => navigate('/denim-shop')}>Explore Indigo</button>
       </div>
       <div className="circled">
         <img src="denim2.jpg" alt="Indigo Denim" />
@@ -39,7 +44,7 @@ const Denim = () => (
       <div className="sectiond-text">
         <h2>Double Denim, Denim on Denim</h2>
         <p>Pairing denim tops with denim bottoms creates a bold statement. The secret to pulling off double denim? Mix textures and washes for a play on depth and dimension.</p>
-        <button className="btnd">See the Looks</button>
+        <button className="btnd" onClick={() => navigate('/denim-shop')}>See the Looks</button>
       </div>
     </div>
 
@@ -47,7 +52,7 @@ const Denim = () => (
       <div className="sectiond-text">
         <h2>Light Denim</h2>
         <p>Light denim, with its airy and laid-back feel, works perfectly for a variety of casual outfits. Distressed or clean-cut, it's a wardrobe staple for any trendsetter.</p>
-        <button className="btnd">Shop Light Denim</button>
+        <button className="btnd" onClick={() => navigate('/denim-shop')}>Shop Light Denim</button>
       </div>
       <div className="circled">
         <img src="denim4.jpg" alt="Light Denim" />
@@ -60,6 +65,7 @@ const Denim = () => (
       </p>
     </footer>
   </div></div>
-);
+  );
+}
 
 export default Denim;

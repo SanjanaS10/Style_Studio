@@ -196,7 +196,7 @@ const products = [
   name: 'Leaf Ear Cuff', 
   price: '₹999', 
   color: 'Rose Gold', 
-  image: '/j.jpeg',
+  image: '/j3.jpeg',
   sizes: ['NA'],
   description: 'A stylish ear cuff in a leaf pattern, perfect for adding a bit of edge to your look without needing an extra piercing.',
   features: ['Material: 100% Cotton', 'Machine washable', 'Fit type: Regular'],
@@ -242,7 +242,18 @@ const products = [
   type : 'accessory',
   ratings: '⭐⭐⭐⭐☆ (120 reviews)',
   deliveryInfo: 'Free delivery on orders over $50. Estimated delivery: 3-5 business days.',
-}
+},
+{ id: 'wide-leg-flare-jeans', name: 'Wide Leg Flare Jeans', price: '₹1799.00', color: 'Light Blue', image: '/d3.jpeg', type: 'denim', description: 'Effortlessly chic wide leg flare jeans in a light wash. Perfect for a breezy, fashion-forward look.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Wide Leg Flare'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐⭐ (134 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'high-rise-straight-jeans', name: 'High Rise Straight Jeans', price: '₹1599.00', color: 'Light Blue', image: '/d4.jpeg', type: 'denim', description: 'Classic high rise straight jeans in a clean light wash. A timeless wardrobe staple.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Straight'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (118 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'navy-wide-leg-trousers', name: 'Navy Wide Leg Trousers', price: '₹1899.00', color: 'Navy', image: '/d5.jpeg', type: 'denim', description: 'Sleek navy wide leg denim trousers for a bold, modern silhouette.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Wide Leg'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (97 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'side-stripe-wide-leg-jeans', name: 'Side Stripe Wide Leg Jeans', price: '₹1699.00', color: 'Dark Blue', image: '/d6.jpeg', type: 'denim', description: 'Dark blue wide leg jeans with a side stripe detail for an edgy, street-style look.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Wide Leg'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (88 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'mens-cargo-denim-jeans', name: "Men's Cargo Denim Jeans", price: '₹1499.00', color: 'Light Blue', image: '/d7.jpeg', type: 'denim', description: 'Relaxed fit cargo denim jeans with utility pockets. Casual and functional.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Relaxed'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (102 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'classic-denim-jacket', name: 'Classic Denim Jacket', price: '₹1999.00', color: 'Blue', image: '/d8.jpeg', type: 'denim', description: 'A wardrobe essential — classic blue denim jacket that goes with everything.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Regular'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐⭐ (201 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'denim-midi-skirt', name: 'Denim Midi Skirt', price: '₹1299.00', color: 'Dark Blue', image: '/d11.jpeg', type: 'denim', description: 'A flowy dark blue denim midi skirt with a side slit. Elegant yet casual.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Regular'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (76 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'navy-denim-coord-set', name: 'Navy Denim Co-ord Set', price: '₹2499.00', color: 'Navy', image: '/d12.jpeg', type: 'denim', description: 'A matching navy denim jacket and trouser co-ord set. Effortlessly put-together.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Regular'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐⭐ (89 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'mens-navy-denim-jacket', name: "Men's Navy Denim Jacket", price: '₹1999.00', color: 'Navy', image: '/d14.jpeg', type: 'denim', description: "A sharp navy denim jacket for men. Pairs well with chinos or jeans.", features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Regular'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (93 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'mens-navy-shirt', name: "Men's Navy Shirt", price: '₹999.00', color: 'Navy', image: '/d15.jpeg', type: 'denim', description: 'A clean navy denim shirt for men. Smart casual for any occasion.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Regular'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (110 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' },
+{ id: 'mens-slim-fit-jeans', name: "Men's Slim Fit Jeans", price: '₹1399.00', color: 'Blue', image: '/d20.jpeg', type: 'denim', description: 'Slim fit jeans in a classic blue wash. Clean, minimal, versatile.', features: ['Material: 100% Cotton Denim', 'Machine washable', 'Fit type: Slim'], sizes: ['S', 'M', 'L', 'XL'], ratings: '⭐⭐⭐⭐☆ (145 reviews)', deliveryInfo: 'Free delivery on orders over ₹2500. Estimated delivery: 3-5 business days.' }
 ];
 const ProductDetails = () => {
   const { productId } = useParams();

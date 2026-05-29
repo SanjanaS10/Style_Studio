@@ -1,10 +1,11 @@
 import React from "react";
-import { useDispatch } from "react-redux"; // Ensure Redux setup
+import { useCart } from "./CartContext";  // Import CartContext hook
 import Navbar from "./Navbar";
-import "./S.css"; // Import CSS for styling
+import "./S.css"; 
+import { Link } from 'react-router-dom';
 
 const S2 = () => {
-  const dispatch = useDispatch();
+  const { dispatch } = useCart();
 
   // Function to handle adding product to cart
   const handleAddToCart = () => {
@@ -17,6 +18,7 @@ const S2 = () => {
     }
 
     const product = {
+      id: 's2',   
       name: "Earthy Sunset Dress",
       price: '₹ 819',
       image: "s4.jpg",
@@ -46,7 +48,7 @@ const S2 = () => {
             </h2>
 
             {/* Product Description */}
-            <p className="product1-description">
+            <p className="product-description">
             A bold blend of earth tones and sunset-inspired colors, this swim
             dress channels the warmth of a summer evening.
             </p>

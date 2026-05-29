@@ -6,51 +6,47 @@ import MenWear from './components/MenWear';
 import WomenWear from './components/WomenWear';
 import Accessories from './components/Accessories';
 import Denim from './components/Denim';
+import DenimShop from './components/DenimShop';
 import SwimWear from './components/SwimWear';
 import About from './components/About';
-import FAQ from './components/FAQ'; 
-import Contact from './components/Contact'; 
+import FAQ from './components/FAQ';
+import Contact from './components/Contact';
 import Cart from './components/Cart';
 import AuthForm from './components/AuthForm';
-// import ProductSelector from './components/ProductSelector';
 import ProductDetails from './components/ProductDetails';
 import S1 from './components/S1';
 import S2 from './components/S2';
 import S3 from './components/S3';
-// import ThreeJSViewer  from './components/ThreeJSViewer';
-
-// import ModelViewer from './components/ModelViewer';
-// import S1_3D from './components/S1_3D';
-import Checkout from "./components/Checkout";
-import OrderConfirmation from "./components/OrderConfirmation";
- // Add FAQ here
+import Checkout from './components/Checkout';
+import OrderConfirmation from './components/OrderConfirmation';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
-   const email = "user@example.com";
   return (
-    
     <Router>
       <Routes>
-      <Route path="/" element={<AuthForm />} />
+        {/* Public route */}
+        <Route path="/" element={<AuthForm />} />
 
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/Faq" element={<FAQ />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/swimwear" element={<SwimWear />} />
-        <Route path="/men" element={<MenWear />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/order-confirmation" element={<OrderConfirmation />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/women" element={<WomenWear />} />
-        <Route path="/accessories" element={<Accessories />} />
-        <Route path="/denim" element={<Denim />} />
-        <Route path="/s1" element={<S1/>} /> 
-        <Route path="/s2" element={<S2/>} />
-        <Route path="/s3" element={<S3/>} />
-        <Route path="/product/:productId" element={<ProductDetails />} />
- 
+        {/* Protected routes */}
+        <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+        <Route path="/shop" element={<ProtectedRoute><ShopPage /></ProtectedRoute>} />
+        <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
+        <Route path="/Faq" element={<ProtectedRoute><FAQ /></ProtectedRoute>} />
+        <Route path="/contact" element={<ProtectedRoute><Contact /></ProtectedRoute>} />
+        <Route path="/swimwear" element={<ProtectedRoute><SwimWear /></ProtectedRoute>} />
+        <Route path="/men" element={<ProtectedRoute><MenWear /></ProtectedRoute>} />
+        <Route path="/women" element={<ProtectedRoute><WomenWear /></ProtectedRoute>} />
+        <Route path="/accessories" element={<ProtectedRoute><Accessories /></ProtectedRoute>} />
+        <Route path="/denim" element={<ProtectedRoute><Denim /></ProtectedRoute>} />
+        <Route path="/denim-shop" element={<ProtectedRoute><DenimShop /></ProtectedRoute>} />
+        <Route path="/s1" element={<ProtectedRoute><S1 /></ProtectedRoute>} />
+        <Route path="/s2" element={<ProtectedRoute><S2 /></ProtectedRoute>} />
+        <Route path="/s3" element={<ProtectedRoute><S3 /></ProtectedRoute>} />
+        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
+        <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
+        <Route path="/order-confirmation" element={<ProtectedRoute><OrderConfirmation /></ProtectedRoute>} />
+        <Route path="/product/:productId" element={<ProtectedRoute><ProductDetails /></ProtectedRoute>} />
       </Routes>
     </Router>
   );

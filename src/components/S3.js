@@ -17,6 +17,7 @@ const S3 = () => {
     }
 
     const product = {
+      id: 's3',   
       name: " Fiery Red swimdress ",
       price: '₹ 899',
       image: "s3.jpg",
